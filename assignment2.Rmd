@@ -1,0 +1,44 @@
+---
+title: "Assignment 2"
+author: "Adwait Kalsekar"
+date: "2023-09-23"
+output: html_document
+---
+
+```{r}
+# Load Dataset
+library(readxl)
+df <- read_excel("Typical_Employee_Survey_Data.xlsx", col_names = FALSE)
+
+# Add Column Names (Header)
+colnames(df) <- c("Col1","Col2","Col3","Col4","Col5","Col6","Col7","Col8","Col9","Col10","Col11")
+
+# Five point summary of Each Column
+fivenum(df$Col1)
+fivenum(df$Col2)
+fivenum(df$Col3)
+fivenum(df$Col4)
+fivenum(df$Col5)
+fivenum(df$Col6)
+fivenum(df$Col7)
+fivenum(df$Col8)
+fivenum(df$Col9)
+fivenum(df$Col10)
+fivenum(df$Col11)
+
+# Box plot
+boxplot(df)
+
+
+# Converting to Factors
+df$Col2<-as.factor(df$Col2)
+df$Col8<-as.factor(df$Col8)
+
+str(df)
+
+# Different Plots
+
+# Scatter Plots
+
+
+```
