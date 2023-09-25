@@ -36,9 +36,23 @@ df$Col8<-as.factor(df$Col8)
 
 str(df)
 
-# Different Plots
+# Different Plots for each Column
+hist(df$Col1)
+plot(df$Col2)
+boxplot(df$Col3)
+hist(df$Col4)
+boxplot(df$Col5)
+hist(df$Col6)
+boxplot(df$Col7)
+boxplot(df$Col8)
+boxplot(df$Col9)
+barplot(df$Col10)
+hist(df$Col11)
 
 # Scatter Plots
-
-
+plot(df$Col1, df$Col5)
+plot(df$Col10, df$Col6)
+plot(df$Col3, df$Col11)
+plot(df$Col6, df$Col8)
+plot(df$Col8, df$Col2)
 ```
